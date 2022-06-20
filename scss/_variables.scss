@@ -1,0 +1,27 @@
+$font: Tahoma, sans-serif;
+$main: #73D2DE;
+$mainbg: #e3f6f8;
+
+
+$c1: #EEFFED;
+$c2:whitesmoke;
+$c3: #2E86AB;
+$c4: #FF9D4D;
+$c5: black;
+$c6:#caffd5;
+$c7: #D81159;
+$c8: #24b14d;
+
+$heading2: $c4;
+$heading3: rgba($c4, 0.9);
+$heading4: $c8;
+
+$headingBoarder:rgba($c6, 0.4);
+$tempBoarder: rgba($main, 0.4);
+
+$Acolor: $c6;
+$aHover: $c4;
+
+
+@import "./partials/breakpoints";
+@import "./partials/mixins";

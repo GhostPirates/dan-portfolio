@@ -1,0 +1,69 @@
+@import url("../node_modules/overlayscrollbars/css/OverlayScrollbars.css");
+
+/* GLOBAL */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font;
+  background-color: $mainbg;
+  overflow: auto;
+}
+
+.outer {
+  max-width: 992px;
+  margin: auto;
+}
+
+nav ul,
+footer ul {
+  letter-spacing: 0.75px;
+}
+
+nav ul li,
+footer ul li {
+  display: inline;
+}
+
+.button:hover,
+footer ul li a:hover,
+.button:focus,
+footer ul li a:focus {
+  color: $aHover;
+}
+
+.os-theme-dark.os-theme-dark-edgy > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: $c4;
+  min-height: 30px;
+  max-height: 30px;
+}
+
+h3 {
+  margin-left: 5%;
+  color: $heading3;
+  font-size: 1.4em;
+  position: relative;
+  @include ten_24 {
+      font-size: large;
+  }
+  &::before {
+      border-top: 7.5px solid $headingBoarder;
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      clip: rect(auto, 10px, auto, auto);
+  }
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "button";
+@import "animation";
+
+
