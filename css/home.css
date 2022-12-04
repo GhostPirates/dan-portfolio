@@ -24,23 +24,15 @@
 }
 
 #s57 {
-  background-image: url("../images/home/sec.jpg");
-}
-
-#s58 {
-  background-image: url("../images/home/cart.jpg");
-}
-
-#s59 {
-  background-image: url("../images/home/store.jpg");
-}
-
-#s510 {
   background-image: url("../images/home/candid.jpg");
 }
 
-#s511 {
+#s58 {
   background-image: url("../images/home/port.jpg");
+}
+
+#s59 {
+  background-image: url("../images/home/login.jpg");
 }
 
 .template-img {
