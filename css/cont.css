@@ -164,6 +164,10 @@ footer ul li a:focus {
   max-height: 30px;
 }
 
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track, .os-theme-light > .os-scrollbar > .os-scrollbar-track {
+  background: rgba(74, 83, 84, 0.1);
+}
+
 h3 {
   margin-left: 5%;
   color: rgba(255, 127, 38, 0.9);
@@ -432,18 +436,6 @@ main::after {
     position: relative;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .template-p-cont .template-p-img {
-    width: 25px;
-    height: 25px;
-    background-image: url(../images/template/equal0.png);
-    opacity: 0.3;
-    position: absolute;
-    right: 12px;
-    top: 57.5px;
-    z-index: 999;
-  }
-}
 .template-p-cont p.cont {
   margin: unset;
 }
@@ -463,8 +455,6 @@ main::after {
     text-align: center;
     height: calc(100% - 45px);
     border-left: none;
-    border-top: 2.5px solid rgba(106, 203, 215, 0.4);
-    border-bottom: 2.5px solid rgba(106, 203, 215, 0.4);
     margin: 10px auto;
     padding: 10px 5% 10px 5%;
     font-size: initial;
