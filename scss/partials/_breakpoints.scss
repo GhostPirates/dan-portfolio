@@ -16,12 +16,6 @@
     }
 }
 
-@mixin seven_68 {
-    @media only screen and (max-width: 768px) {
-        @content;
-    }
-}
-
 @mixin four_80 {
     @media only screen and (max-width: 480px) {
         @content;
@@ -40,14 +34,14 @@
     }
 }
 
-@mixin four_80_1024 {
-    @media only screen and (min-width: 480px) and (max-width: 1024px) {
+@mixin seven_20_portrait {
+    @media only screen and (max-width: 720px) and (orientation: portrait) {
         @content;
     }
 }
 
-@mixin seven_20_portrait {
-    @media only screen and (max-width: 720px) and (orientation: portrait) {
+@mixin ten_23_landscape  {
+    @media only screen and (max-width: 1023px) and (orientation: landscape) {
         @content;
     }
 }

@@ -4,6 +4,8 @@
   background-image: url(../images/contact/contact.png);
   background-position: center;
   height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .template-img-0 {
@@ -54,7 +56,19 @@
         border: 1px solid $c3;
         color: $c3;
         outline: none;
-        overflow-y: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: $c4 $c11;
+        scrollbar-width: thin;
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          background: $c11;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $c4;
+        }
       }
     }
     input {

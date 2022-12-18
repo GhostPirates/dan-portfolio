@@ -39,21 +39,19 @@ function scrollAnimation() {
         }
 
         if (document.getElementById("s4")) {
+            const s4 = document.getElementById("s4");
             const ob0ul = document.getElementById("ob0ul");
-
-            if (scroll_pos > getPosition(document.getElementById("s4"))) {
+            const s5 = document.getElementById("s5");
+            const s51 = document.getElementById("s51");
+            const style = window.getComputedStyle(s4).getPropertyValue("visibility");
+              
+            if (scroll_pos > getPosition(document.getElementById("s4")) && style === "hidden") {
+                s4.classList.remove("vis1");
+                s4.classList.add("vis0");
+                s4.classList.add("ani2");
                 ob0ul.classList.remove("vis1");
                 ob0ul.classList.add("vis0");
                 ob0ul.classList.add("ani2");
-            }
-        }
-
-        if (document.getElementById("s5")) {
-            const s5 = document.getElementById("s5");
-            const s51 = document.getElementById("s51");
-            const style = window.getComputedStyle(s5).getPropertyValue("visibility");
-
-            if (scroll_pos > getPosition(s5) && style === "hidden") {
                 s5.classList.remove("vis1");
                 s5.classList.add("vis0");
                 s5.classList.add("ani2");
@@ -63,6 +61,7 @@ function scrollAnimation() {
                 }, 1500);
             }
         }
+
     }
 }
 
@@ -106,26 +105,25 @@ function check() {
             document.getElementById("s4") &&
             getPosition(document.getElementById("s4")) < line
         ) {
+            const s4 = document.getElementById("s4");
             const ob0ul = document.getElementById("ob0ul");
+            const s5 = document.getElementById("s5");
+            const s51 = document.getElementById("s51");
+            s4.classList.remove("vis1");
+            s4.classList.add("vis0");
+            s4.classList.add("ani2");
             ob0ul.classList.remove("vis1");
             ob0ul.classList.add("vis0");
             ob0ul.classList.add("ani2");
-        }
-
-        if (
-            document.getElementById("s5") &&
-            getPosition(document.getElementById("s5")) < line
-        ) {
-            const s5 = document.getElementById("s5");
-            const s51 = document.getElementById("s51");
             s5.classList.remove("vis1");
             s5.classList.add("vis0");
-            s5.classList.add("ani2");
+            s5.classList.add("ani2"); 
             s51.classList.add("ani0");
             setTimeout(function () {
                 s51.classList.remove("ani0");
             }, 1500);
         }
+
     } else {
         if (document.getElementById("s51")) {
             const s51 = document.getElementById("s51");

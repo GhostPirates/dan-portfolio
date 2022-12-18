@@ -3,6 +3,8 @@
   background-image: url(../images/contact/contact.png);
   background-position: center;
   height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .template-img-0 {
@@ -79,7 +81,19 @@
   border: 1px solid #2E86AB;
   color: #2E86AB;
   outline: none;
-  overflow-y: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #ff7f26 rgba(74, 83, 84, 0.1);
+  scrollbar-width: thin;
+}
+.template-p-cont div.template-p form fieldset textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.template-p-cont div.template-p form fieldset textarea::-webkit-scrollbar-track {
+  background: rgba(74, 83, 84, 0.1);
+}
+.template-p-cont div.template-p form fieldset textarea::-webkit-scrollbar-thumb {
+  background: #ff7f26;
 }
 .template-p-cont div.template-p form input {
   width: 100%;
@@ -204,27 +218,17 @@ header {
   }
 }
 header > span {
+  display: block;
+  margin: auto;
+  width: 123px;
   height: 75px;
-  width: 260px;
-  margin-left: 5%;
-  background-image: url(../images/template/logotext.png);
+  margin-left: 10%;
+  background-image: url(../images/template/textonly.png);
   position: relative;
 }
 @media only screen and (max-width: 1024px) {
   header > span {
-    display: none;
-  }
-}
-header > span + span {
-  display: none;
-}
-@media only screen and (max-width: 1024px) {
-  header > span + span {
-    display: block;
     margin: auto;
-    width: 123px;
-    background-image: url(../images/template/textonly.png);
-    position: relative;
   }
 }
 header button {
@@ -405,7 +409,6 @@ main::after {
     float: none;
     margin: auto auto 5% auto;
     width: 168px;
-    height: 163px;
     border: none;
     padding: 0;
   }
@@ -428,7 +431,7 @@ main::after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin: auto;
-    border-top: 5px solid #ff7f26;
+    border-top: 3px solid #ff7f26;
     position: relative;
   }
 }
@@ -440,7 +443,6 @@ main::after {
   margin: 13% 0;
   padding: 0 40px;
   color: #2E86AB;
-  border-left: 5px solid #ff7f26;
   text-align: right;
   font-size: large;
   word-wrap: break-word;
@@ -450,7 +452,6 @@ main::after {
   .template-p-cont .template-p {
     text-align: center;
     height: calc(100% - 40px);
-    border-left: none;
     margin: 10px auto;
     padding: 10px 5% 10px 5%;
     font-size: initial;
@@ -459,7 +460,9 @@ main::after {
 
 .template-div {
   background-image: url(../images/template/div1.png);
-  background-size: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 7.5% auto;
   width: 90.021%;
   height: 109px;
@@ -479,6 +482,7 @@ footer {
   border-top: 8px solid mintcream;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  background-repeat: no-repeat;
   display: flex;
   position: relative;
 }
