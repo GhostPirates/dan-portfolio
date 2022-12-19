@@ -6,19 +6,20 @@ function toggle() {
 
 function vivus() {
   new Vivus(
-      "my-svg",
-      {
-          duration: 800,
-          file: "https://gendrive.s3-ap-southeast-2.amazonaws.com/svg.svg",
-      },
-      null
+    "my-svg",
+    {
+      duration: 800,
+      file: "images/template/svg.svg",
+    },
+    null
   );
 }
 
 eventListner(window, "scroll", cache, null);
-eventListner(document.getElementsByClassName("click")[0],"click",toggle,false);
+eventListner(document.getElementsByClassName("click")[0], "click", toggle, false);
 
 window.onload = function () {
   script();
   check();
+  console.log(...performance.getEntriesByType('resource').map((r) => r.name))
 };
