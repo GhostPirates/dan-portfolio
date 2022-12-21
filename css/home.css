@@ -411,6 +411,7 @@ nav ul .button {
     border: 1px solid rgba(238, 238, 229, 0.948);
     color: #caffd5;
     font-size: smaller;
+    border-radius: 5px;
   }
 }
 nav ul .button .label {
@@ -491,16 +492,6 @@ main::after {
   .main-logo h2 {
     font-size: x-large;
     text-shadow: none;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .main-logo h2 {
-    font-size: medium;
-  }
-}
-@media only screen and (max-width: 240px) {
-  .main-logo h2 .main-logo h2 {
-    font-size: smaller;
   }
 }
 .main-logo .main-logo-span {
