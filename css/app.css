@@ -276,10 +276,13 @@ main::after {
 
 .template-img-cont {
   width: calc(992px - 73.991%);
-  height: 250px;
-  margin-left: calc(987px - 95%);
-  border: 5px solid rgba(238, 238, 229, 0.948);
-  padding: 5%;
+  height: 260px;
+  margin-left: calc(992px - 94.6%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-image: url(../images/template/natural-paper.png);
+  background-color: rgba(238, 238, 229, 0.948);
+  padding: 50px;
   float: left;
 }
 @media only screen and (max-width: 1024px) {
@@ -287,17 +290,20 @@ main::after {
     float: none;
     margin: auto;
     width: 168px;
-    border: none;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
     padding: 0;
+    background-image: none;
+    background-color: unset;
   }
 }
 
 .template-p-cont {
-  height: 280px;
+  height: 360px;
   width: calc(992px - 46.026%);
   float: right;
-  margin: 4% calc(987px - 95%) 0 0;
-  border-top-right-radius: 25px;
+  margin: 0 calc(987px - 95%) 0 0;
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 25px;
   background-image: url(../images/template/natural-paper.png);
   background-color: rgba(238, 238, 229, 0.948);
@@ -317,8 +323,8 @@ main::after {
   margin: unset;
 }
 .template-p-cont .template-p {
-  height: 50%;
-  margin: 13% 0;
+  height: 40%;
+  margin: 20.25% 0;
   padding: 0 40px;
   color: #2E86AB;
   text-align: right;
@@ -341,7 +347,7 @@ main::after {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 7.5% auto;
+  margin: 9.5% auto 7.5% auto;
   width: 90.021%;
   height: 109px;
 }
@@ -673,7 +679,7 @@ footer h2 {
   position: relative;
 }
 #site #s4 {
-  height: 349px;
+  height: 350px;
   width: calc(992px - 46.026%);
   margin: auto auto auto calc(992px - 95%);
   float: left;
@@ -779,8 +785,8 @@ footer h2 {
   width: calc(992px - 73.991%);
   height: 250px;
   float: right;
-  padding: 5%;
-  margin-right: calc(992px - 95%);
+  padding: 50px;
+  margin-right: calc(992px - 95.1%);
   position: relative;
   background-image: url(../images/template/natural-paper.png);
   background-color: rgba(238, 238, 229, 0.948);
@@ -1201,7 +1207,7 @@ a[target=git]:hover, a[target=git]:focus {
 }
 
 .img {
-  margin: 30px 0 30px 0;
+  margin: 35px 0 35px 0;
 }
 
 .last-img {
