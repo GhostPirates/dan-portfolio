@@ -1,0 +1,122 @@
+#contact-template-img {
+  background-image: url(../images/contact/contact.png);
+}
+
+#contact-template-img-0 {
+  background-image: url(../images/contact/contimg.jpg);
+}
+
+#overlay  {
+  text-align: initial;
+  margin: 9.5% 0;
+  height: 71%;
+  @include ten_24 {
+    width: calc(90% - 16px);
+    height: calc(100% - 40px);
+    margin: 10px auto;
+  }
+  form {
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      @include ten_24 {
+        padding: 0 5%;
+    }
+      legend {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+          padding-bottom: 35px;
+          margin: auto;
+          width: 100%;
+          &:nth-child(1), &:nth-child(2) {
+            width: 49.3%;
+            display: inline-block;
+            @include ten_24 {
+              width: 100%;
+
+            }
+          }
+        }
+      }
+      label {
+        color: $c4;
+        height: 36px;
+        display: block;
+      }
+      textarea {
+        width: 100%;
+        resize: none;
+        font: inherit;
+        padding: 0;
+        margin: 5px 0 0 0;
+        font-size: inherit;
+        background-color: transparent;
+        border: 1px solid $c3;
+        border-bottom-right-radius: 5px;
+        color: $c3;
+        outline: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: $c4 $c11;
+        scrollbar-width: thin;
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          background: $c11;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $c4;
+        }
+        @include ten_24 {
+          border-bottom-right-radius: unset;
+        }
+      }
+    }
+    input {
+      width: 100%;
+      font-style: inherit;
+      padding: 0 0 2px 1px;
+      margin: 5px 0 0 0;
+      border-bottom-right-radius: 5px;
+      font: inherit;
+      background-color: transparent;
+      border: 1px solid $c3;
+      color: $c3;
+      outline: none;
+      @include ten_24 {
+        border-bottom-right-radius: unset;
+      }
+    }
+    #sent {
+      text-align: center;
+      height: 23px;
+      display: none;
+      margin: 0 auto;
+    }
+    #sub {
+      width: auto;
+      display: block;
+      margin: auto;
+      padding: 0 10px;
+      color: $c8;
+      border-radius: 10px;
+    }
+    .red {
+      border-color: $c7;
+    }
+    .msg {
+      color: $c7;
+      font-size: smaller;
+      padding-left: 2.5px;
+      display: block;
+    }
+  }
+}
