@@ -152,13 +152,7 @@ header nav ul li a {
   color: #f5fcfc;
   border-left: 4px solid #f5fcfc;
   position: relative;
-}
-@media only screen and (max-width: 1024px) {
-  header nav ul li a {
-    border-top: 1px solid #f5fcfc;
-    border-right: 1px solid #f5fcfc;
-    border-left: 1px solid #f5fcfc;
-  }
+  border-top: 1px solid #f5fcfc;
 }
 header nav ul li a:hover::after, header nav ul li a:focus::after {
   width: 100%;
@@ -190,6 +184,16 @@ header nav ul li a::after {
 @media only screen and (max-width: 1024px) {
   header nav ul li a::after {
     background-color: #F07F31;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header nav ul li:nth-child(even) a {
+    border-left: 1px solid #f5fcfc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header nav ul li:nth-child(odd) a {
+    border-left: none;
   }
 }
 
@@ -1268,7 +1272,7 @@ main::after {
     height: 0;
     opacity: 0;
   }
-  60% {
+  85% {
     opacity: 0;
   }
   100% {
