@@ -240,18 +240,14 @@ main::after {
 }
 .main-logo #my-svg {
   display: inline-block;
+  overflow: visible;
+  opacity: 0.75;
+  width: 20.39%;
 }
-.main-logo #my-svg,
-.main-logo span svg {
-  width: 90px;
-  height: 90px;
-}
-@media only screen and (max-width: 1024px) {
-  .main-logo #my-svg,
-.main-logo span svg {
-    width: 55px;
-    height: 55px;
-  }
+.main-logo #my-svg path {
+  fill: none;
+  stroke: #EEFFED;
+  stroke-width: 2;
 }
 .main-logo h2 {
   font-style: oblique;
